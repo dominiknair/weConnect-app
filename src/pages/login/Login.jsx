@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import './login.css';
 
 function Login() {
@@ -19,7 +20,10 @@ function Login() {
                     </div>
                     <input type="submit" value="Login"/>
                     <div className="register_link">
-                        Not a member? <button href='#'>Register</button>
+                        Not a member? 
+                        <Link to="/register">
+                            <button>Register</button>
+                        </Link>
                     </div>
                 </form>
             </div>
