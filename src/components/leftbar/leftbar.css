@@ -1,3 +1,67 @@
 .leftbar {
-    background-color: pink;
+    flex: 1;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 80px);
+    overflow: scroll;
 }
+
+.leftbar::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+     scrollbar-width: none;  /* Firefox */
+}
+
+.container {
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu span {
+    font-size: 12px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user span {
+    font-size: 14px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item img{
+    width: 30px;
+    object-fit: cover;
+}
+
+.item span{
+    font-size: 14px;
+}
+
+hr {
+    margin: 20px 0;
+    height: 0.01em;
+    border: none;
+    background-color: lightgray;
+}
+
